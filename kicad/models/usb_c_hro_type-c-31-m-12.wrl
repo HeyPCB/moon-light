@@ -1,0 +1,14 @@
+#VRML V2.0 utf8
+# heypcb-kicad simplified body: HRO TYPE-C-31-M-12 envelope
+Shape {
+  appearance Appearance { material Material { diffuseColor 0.720 0.740 0.760 specularColor 0.50 0.50 0.50 shininess 0.6 } }
+  geometry IndexedFaceSet { coord Coordinate { point [ -1.7598 -1.4469 0.0000, 1.7598 -1.4469 0.0000, 1.7598 1.4469 0.0000, -1.7598 1.4469 0.0000, -1.7598 -1.4469 1.2835, 1.7598 -1.4469 1.2835, 1.7598 1.4469 1.2835, -1.7598 1.4469 1.2835 ] } coordIndex [ 0,3,2,1,-1, 4,5,6,7,-1, 0,1,5,4,-1, 1,2,6,5,-1, 2,3,7,6,-1, 3,0,4,7,-1 ] }
+}
+Shape {
+  appearance Appearance { material Material { diffuseColor 0.050 0.050 0.060 specularColor 0.10 0.10 0.10 shininess 0.6 } }
+  geometry IndexedFaceSet { coord Coordinate { point [ -1.4173 -1.4547 0.2165, 1.4173 -1.4547 0.2165, 1.4173 -1.2106 0.2165, -1.4173 -1.2106 0.2165, -1.4173 -1.4547 1.0669, 1.4173 -1.4547 1.0669, 1.4173 -1.2106 1.0669, -1.4173 -1.2106 1.0669 ] } coordIndex [ 0,3,2,1,-1, 4,5,6,7,-1, 0,1,5,4,-1, 1,2,6,5,-1, 2,3,7,6,-1, 3,0,4,7,-1 ] }
+}
+Shape {
+  appearance Appearance { material Material { diffuseColor 0.150 0.150 0.160 specularColor 0.10 0.10 0.10 shininess 0.6 } }
+  geometry IndexedFaceSet { coord Coordinate { point [ -1.1417 -1.4587 0.5315, 1.1417 -1.4587 0.5315, 1.1417 -1.3287 0.5315, -1.1417 -1.3287 0.5315, -1.1417 -1.4587 0.7677, 1.1417 -1.4587 0.7677, 1.1417 -1.3287 0.7677, -1.1417 -1.3287 0.7677 ] } coordIndex [ 0,3,2,1,-1, 4,5,6,7,-1, 0,1,5,4,-1, 1,2,6,5,-1, 2,3,7,6,-1, 3,0,4,7,-1 ] }
+}

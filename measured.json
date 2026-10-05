@@ -1,0 +1,56 @@
+{
+ "board_mm": [
+  54.0,
+  62.7
+ ],
+ "area_cm2": 13.9,
+ "copper_layers": 2,
+ "parts_placed": 32,
+ "parts_dnp": 4,
+ "smt_sides": [
+  "top"
+ ],
+ "tht_parts": [
+  "J1"
+ ],
+ "nets": 22,
+ "finish": {
+  "mask": "Blue",
+  "silk": "White",
+  "copper": "ENIG"
+ },
+ "qr": [
+  {
+   "url": "https://heypcb.ai/world/b/e2974968006f",
+   "module_mm": 0.345,
+   "layer": "B.Silkscreen"
+  }
+ ],
+ "erc": {
+  "errors": 0,
+  "warnings": 0
+ },
+ "route": {
+  "before": 67,
+  "after": 0,
+  "tracks": 240,
+  "vias": 13
+ },
+ "drc": {
+  "state": "fresh",
+  "errors": 0,
+  "warnings": 1,
+  "unconnected": 0,
+  "parity": 0
+ },
+ "dfm": {
+  "profile": "jlcpcb_2layer",
+  "errors": 0,
+  "warnings": 1
+ },
+ "fab_ready": true,
+ "parts_bound": 32,
+ "parts_unsourced": 0,
+ "bom_usd_at_100": 1.427,
+ "bom_parts_usd_at_100": 1.307
+}

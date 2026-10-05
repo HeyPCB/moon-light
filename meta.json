@@ -1,0 +1,14 @@
+{
+ "slug": "moon-light",
+ "title": "Luna, the night-light moon",
+ "hook": "A sleepy moon that turns on at dusk and tucks itself in after you fall asleep.",
+ "intro": "Luna is a crescent-moon night light on USB-C. An APDS-9306 ambient light sensor tells a CH32V003 when the room has gone dark; eight orange LEDs along the moon's inner curve then fade up to a candle-coloured glow, and fade out again after a 15, 45 or 90 minute sleep timer. It stays off until the room sees daylight. Pat its gold cheek to switch it by hand; hang it on a nail by its keyhole.",
+ "what": [
+  "**Glow:** 8 XL-1608UOC orange (605 nm) LEDs, each with its own 220 Ohm from 5 V, switched together by an AO3400A on TIM1 CH4 at 1 kHz.",
+  "**Light sensor:** Broadcom APDS-9306-065 at I2C 0x52, 3.3 V, bit-banged I2C with 10k pull-ups.",
+  "**MCU:** CH32V003F4P6 at 3.3 V from an XC6206 LDO (JLC Basic).",
+  "**Touch:** a 4 mm ENIG cheek pad through 1 kOhm, read by ch32fun's ADC touch.",
+  "**Mounting:** a keyhole cutout near the centre of mass; USB-C out of the bottom.",
+  "**Power:** USB-C, about 0.2 W while glowing (SPEC.md)."
+ ]
+}

@@ -1,0 +1,537 @@
+{
+  "parts": {
+    "bound": 32,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "J1",
+        "R1",
+        "R2",
+        "C1",
+        "U1",
+        "C2",
+        "C3",
+        "U2",
+        "C4",
+        "U3",
+        "C5",
+        "R3",
+        "R4",
+        "R5",
+        "Q1",
+        "R6",
+        "D1",
+        "R7",
+        "D2",
+        "R8",
+        "D3",
+        "R9",
+        "D4",
+        "R10",
+        "D5",
+        "R11",
+        "D6",
+        "R12",
+        "D7",
+        "R13",
+        "D8",
+        "R14"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C165948",
+      "C2649498",
+      "C5187096",
+      "C965800"
+    ],
+    "extended_fee_usd": 12.0,
+    "findings": [
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "4 distinct Extended parts, about $12 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 36,
+    "nets": 22,
+    "noConnects": [
+      "J1.A8",
+      "J1.B8",
+      "U2.1",
+      "U2.2",
+      "U2.3",
+      "U2.4",
+      "U2.5",
+      "U2.8",
+      "U2.10",
+      "U2.11",
+      "U2.12",
+      "U2.13",
+      "U2.15",
+      "U2.16",
+      "U2.17",
+      "U3.4",
+      "U3.5"
+    ],
+    "ran": true,
+    "seconds": 1.1
+  },
+  "schematic": {
+    "paper": "A3",
+    "file": "moon_light.kicad_sch",
+    "ran": true,
+    "seconds": 2.0
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 0.6
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 22,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "board": {
+    "footprints": 36,
+    "outline_mm": [
+      66.0,
+      74.0
+    ],
+    "stackup": {
+      "copper": 2,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_2layer"
+    },
+    "art": {
+      "items": 19,
+      "shapes": 46,
+      "keepouts": 4,
+      "qr": 1,
+      "by_layer": {
+        "F.SilkS": 33,
+        "F.Cu": 3,
+        "F.Mask": 3,
+        "B.SilkS": 7
+      }
+    },
+    "finish": {
+      "mask": "Blue",
+      "silk": "White",
+      "copper": "ENIG"
+    },
+    "ran": true,
+    "seconds": 0.5
+  },
+  "place": {
+    "parts": 36,
+    "log": [
+      "D1 -> (25.55, 13.00) rot 0 : rung 0 lock: glow LED 0 along the inner curve, like a ray",
+      "R7 -> (23.65, 15.55) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D2 -> (22.05, 18.29) rot 0 : rung 0 lock: glow LED 1 along the inner curve, like a ray",
+      "R8 -> (20.77, 21.19) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D3 -> (19.83, 24.23) rot 0 : rung 0 lock: glow LED 2 along the inner curve, like a ray",
+      "R9 -> (19.24, 27.34) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D4 -> (19.00, 30.51) rot 0 : rung 0 lock: glow LED 3 along the inner curve, like a ray",
+      "R10 -> (19.13, 33.68) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D5 -> (19.61, 36.82) rot 0 : rung 0 lock: glow LED 4 along the inner curve, like a ray",
+      "R11 -> (20.45, 39.88) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D6 -> (21.62, 42.83) rot 0 : rung 0 lock: glow LED 5 along the inner curve, like a ray",
+      "R12 -> (23.13, 45.63) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D7 -> (24.94, 48.24) rot 0 : rung 0 lock: glow LED 6 along the inner curve, like a ray",
+      "R13 -> (27.03, 50.62) rot 0 : rung 0 lock: its 220 ohm, next along the arc",
+      "D8 -> (29.38, 52.76) rot 90 : rung 0 lock: glow LED 7 along the inner curve, like a ray",
+      "R14 -> (31.96, 54.62) rot 90 : rung 0 lock: its 220 ohm, next along the arc",
+      "J1 -> (33.00, 65.00) rot 0 : rung 0 lock: USB-C on the bottom flat, mouth down",
+      "C1 -> (25.00, 62.00) rot 90 : rung 0 lock: VBUS bulk",
+      "R1 -> (40.80, 61.80) rot 0 : rung 0 lock: CC1 5.1k",
+      "R2 -> (40.80, 63.60) rot 0 : rung 0 lock: CC2 5.1k",
+      "U1 -> (21.00, 58.60) rot 0 : rung 0 lock: 3.3 V LDO",
+      "C2 -> (28.60, 56.20) rot 0 : rung 0 lock: ",
+      "C3 -> (17.40, 60.60) rot 90 : rung 0 lock: ",
+      "Q1 -> (24.60, 53.80) rot 0 : rung 0 lock: the glow switch, beside the MCU",
+      "R6 -> (32.40, 57.60) rot 0 : rung 0 lock: gate pull-down",
+      "U2 -> (16.00, 52.00) rot 0 : rung 0 lock: MCU low in the moon's thick part",
+      "C4 -> (16.00, 47.00) rot 0 : rung 0 lock: bypass",
+      "TP1 -> (12.40, 56.62) rot 0 : rung 0 lock: SWIO pads (VDD, SWIO, GND)",
+      "TP2 -> (14.94, 56.62) rot 0 : rung 0 lock: SWIO pads (VDD, SWIO, GND)",
+      "TP3 -> (17.48, 56.62) rot 0 : rung 0 lock: SWIO pads (VDD, SWIO, GND)",
+      "U3 -> (10.40, 20.80) rot 0 : rung 0 lock: the light sensor on the forehead",
+      "C5 -> (13.40, 20.80) rot 90 : rung 0 lock: ",
+      "R3 -> (9.60, 24.60) rot 0 : rung 0 lock: SDA pull-up, by the sensor",
+      "R4 -> (12.80, 24.60) rot 0 : rung 0 lock: SCL pull-up",
+      "TP4 -> (7.60, 33.40) rot 0 : rung 0 lock: the gold cheek: pat it",
+      "R5 -> (7.60, 29.40) rot 0 : rung 0 lock: "
+    ],
+    "ran": true,
+    "seconds": 0.3
+  },
+  "route": {
+    "before": 67,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ],
+    "stats": {
+      "tracks": 240,
+      "vias": 13,
+      "length_mm": 547.6,
+      "length_by_layer_mm": {
+        "B.Cu": 51.0,
+        "F.Cu": 496.6
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 16,
+            "renamed": 4,
+            "nets": 39
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 9.8,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 240,
+          "vias": 13,
+          "length_mm": 547.6,
+          "length_by_layer_mm": {
+            "B.Cu": 51.0,
+            "F.Cu": 496.6
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 16,
+            "renamed": 4,
+            "nets": 39
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 15.5,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 229,
+          "vias": 7,
+          "length_mm": 528.9,
+          "length_by_layer_mm": {
+            "B.Cu": 80.0,
+            "F.Cu": 449.0
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 13,
+        "seconds": 9.8
+      },
+      "1_nofanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 7,
+        "seconds": 15.5
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": false,
+    "ran": true,
+    "seconds": 29.2
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 0,
+    "gnd_pour_layers": [
+      "B.Cu"
+    ],
+    "stitched": false,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [],
+    "stats": {
+      "tracks": 240,
+      "vias": 13,
+      "length_mm": 547.6,
+      "length_by_layer_mm": {
+        "B.Cu": 51.0,
+        "F.Cu": 496.6
+      }
+    },
+    "ran": true,
+    "seconds": 0.4
+  },
+  "silk": {
+    "silk_clipped": 3,
+    "art_obstacles": 40,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 0,
+    "refs_seated": 0,
+    "refs_hidden": 36,
+    "title_offset_mm": [
+      -16.0,
+      -5.5
+    ],
+    "title_lines": 2,
+    "stitch_vias_displaced": 0,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "d80c37c8121b54cfb453a1a5bf4170c05120fd294e39e8c447fd0e03879c8263",
+    "errors": 0,
+    "warnings": 1,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {
+      "lib_footprint_mismatch": 1
+    },
+    "repairs": [],
+    "seconds": 1.1
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_2layer",
+    "copper_layers": 2,
+    "errors": 0,
+    "warnings": 1,
+    "rows": [
+      {
+        "rule": "footprint_silk_width",
+        "severity": "warning",
+        "count": 102,
+        "min_mm": 0.12,
+        "note": "stock footprint silk down to 0.12 mm; the fab prints it at its 0.15 mm minimum"
+      }
+    ],
+    "qr": [
+      {
+        "text": "https://heypcb.ai/world/b/e2974968006f",
+        "layer": "B.Silkscreen",
+        "module_mm": 0.345,
+        "floor_mm": 0.3,
+        "ok": true
+      }
+    ],
+    "finish": {
+      "mask": "Blue",
+      "silk": "White",
+      "copper": "ENIG"
+    }
+  },
+  "fab": {
+    "gerbers": [
+      "moon_light-B_Cu.gbl",
+      "moon_light-B_Mask.gbs",
+      "moon_light-B_Paste.gbp",
+      "moon_light-B_Silkscreen.gbo",
+      "moon_light-Edge_Cuts.gm1",
+      "moon_light-F_Cu.gtl",
+      "moon_light-F_Mask.gts",
+      "moon_light-F_Paste.gtp",
+      "moon_light-F_Silkscreen.gto",
+      "moon_light-job.gbrjob"
+    ],
+    "copper_layers": 2,
+    "copper_gerbers": [
+      "moon_light-F_Cu.gtl",
+      "moon_light-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "moon_light-job.gbrjob",
+      "layer_number": 2,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "moon_light-F_Cu.gtl",
+        "moon_light-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        1.51
+      ],
+      "dielectric": [
+        "FR4"
+      ]
+    },
+    "drill": [
+      "moon_light.drl",
+      "moon_light-drl_map.gbr"
+    ],
+    "zip": "moon_light_gerbers.zip",
+    "pos": "moon_light_pos.csv",
+    "cpl": "moon_light_cpl_jlc.csv",
+    "cpl_rotations_corrected": 4,
+    "bom": "moon_light_bom.csv",
+    "schematic_pdf": "moon_light_schematic.pdf",
+    "step": "moon_light.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 1.7
+  }
+}

@@ -1,0 +1,10 @@
+*.kicad_prl
+*-backups/
+_autosave-*
+fp-info-cache
+*.lck
+.DS_Store
+__pycache__/
+*.elf
+*.map
+*.lst
